@@ -8,6 +8,8 @@ export default function Page() {
       <button className="btn btn-primary">Button</button>
       <button className="btn btn-accent">Button</button>
 
+      <p style={{ height: "999px" }}>aaa</p>
+
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
         className="btn"

@@ -7,9 +7,7 @@ export default function Page() {
       <button className="btn">Button</button>
       <button className="btn btn-primary">Button</button>
       <button className="btn btn-accent">Button</button>
-
       <p style={{ height: "999px" }}>aaa</p>
-
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
         className="btn"
@@ -26,7 +24,6 @@ export default function Page() {
           <button>close</button>
         </form>
       </dialog>
-
       {/* The button to open modal */}
       <a href="#my_modal_8" className="btn">
         open modal
@@ -41,6 +38,32 @@ export default function Page() {
               Yay!
             </a>
           </div>
+        </div>
+      </div>
+      {/* drawer */}
+      <div className="drawer">
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+          {/* Page content here */}
+          <label htmlFor="my-drawer" className="btn btn-primary drawer-button">
+            Open drawer
+          </label>
+        </div>
+        <div className="drawer-side">
+          <label
+            htmlFor="my-drawer"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+            {/* Sidebar content here */}
+            <li>
+              <a>Sidebar Item 1</a>
+            </li>
+            <li>
+              <a>Sidebar Item 2</a>
+            </li>
+          </ul>
         </div>
       </div>
     </>
